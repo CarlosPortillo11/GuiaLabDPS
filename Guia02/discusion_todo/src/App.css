@@ -69,6 +69,10 @@ h3 {
   align-items: flex-end;
 }
 
+.quantityLabel{
+  margin: 0px 5em 0px 5em;
+}
+
 .btn-delete {
   cursor: pointer;
   display: inline-block;
@@ -81,3 +85,20 @@ h3 {
   height: 30px;
   width: 30px;
 }
+
+table{
+  margin-top: 20px;
+  border: white;
+  border-width: 3px;
+  border-style: solid;
+  border-collapse: collapse;
+}
+
+th, td{
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1rem 4rem;
+}
+
+
