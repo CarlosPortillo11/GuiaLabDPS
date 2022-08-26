@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Form from './components/Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+const App = () => {
+  return(
+    <div className='App'>
+      <div className='App-content'>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Aquí haremos nuestro TO-DO list.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Form/>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
