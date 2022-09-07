@@ -101,4 +101,17 @@ th, td{
   padding: 1rem 4rem;
 }
 
+.toBuyForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.toBuyForm div{
+  display: flex;
+  margin: 0.4rem 0px;
+}
+
+.toBuyForm div input{
+  margin-left: 0.5rem;
+}

@@ -53,9 +53,15 @@ const Form = () => {
     return(
         <> {/*preventDefault() sirve para evitar que el navegador se refresque al hacer submit al formulario*/}
             <form className='toBuyForm' onSubmit={e => e.preventDefault()}> {/*Se crea un formulario que al hacer Submit guarde la "variable" e (la que contiene la información)*/}
-                <label>Agregar tarea</label><br />
-                <input type="text" name='producto' onChange={handleChange}/> {/*Cada que cambie este apartado, se verá actualizado el state*/}
-                <input type="number" name='cantidad' onChange={handleCantidad}/>
+                <label>Agregue el producto y la cantidad</label>
+                <div>
+                    <label>Producto: </label>
+                    <input type="text" name='producto' onChange={handleChange}/> {/*Cada que cambie este apartado, se verá actualizado el state*/}
+                </div>
+                <div>
+                    <label>Cantidad: </label>
+                    <input type="number" name='cantidad' onChange={handleCantidad}/>
+                </div>
                 <button onClick={HandleClick}>Agregar</button> {/*Cuando se le haga click, desencadena el handler anteriormente programado y mostrará en consola el texto debido*/}
             </form>
            <table>
