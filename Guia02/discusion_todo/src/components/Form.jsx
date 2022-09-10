@@ -15,6 +15,7 @@ const Form = () => {
          cantidad: 6}
     ]);
 
+
     const handleChange = e => { 
         const tempTodos = halfTodo;
         tempTodos[0] = e.target.name;
